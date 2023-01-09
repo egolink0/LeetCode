@@ -14,13 +14,12 @@
 //     return count;
 // };
 
-
-var prefixCount = function(words, pref) {
-    let count = 0;
-    words.forEach((w)=>{
-        if(w.startsWith(pref)){
-            count++;
-        }
-    })
-    return count;
+var prefixCount = function (words, pref) {
+  let count = 0;
+  words.forEach((w) => {
+    if (w.startsWith(pref)) {
+      count++;
+    }
+  });
+  return count;
 };
