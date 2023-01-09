@@ -5,6 +5,7 @@
  */
 const sumArr = (nums) => nums.reduce((sum, num) => sum + num, 0);
 
+// 计算左边和右边滑动窗口的总和进行比较
 var minOperations = function (nums, x) {
   let left = -1,
     right = 0,
@@ -48,3 +49,5 @@ var minOperations = function (nums, x) {
 };
 
 // 每次都 reduce 求一遍滑动窗口的和，会导致时间超出
+
+// 方法二：与 sum - x 进行比较
