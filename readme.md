@@ -6,6 +6,13 @@
 - [ ] [1223. 掷骰子模拟](https://leetcode.cn/problems/dice-roll-simulation/)
 
 
-# 未知地图
-- [ ] 二分
+# 地图
+## doing
 - [ ] DP
+## todo
+- [ ] 二分
+
+## done
+- [x] bfs
+- [x] dfs
+- [x] 图论
