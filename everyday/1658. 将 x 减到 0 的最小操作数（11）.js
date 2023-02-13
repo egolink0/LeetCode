@@ -49,5 +49,4 @@ var minOperations = function (nums, x) {
 };
 
 // 每次都 reduce 求一遍滑动窗口的和，会导致时间超出
-
 // 方法二：与 sum - x 进行比较
