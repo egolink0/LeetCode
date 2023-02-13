@@ -17,8 +17,7 @@ const hasOverThree = list => {
   }
 };
 
-// 所给员工的时间是一天之内的
-// 时间是乱序的
+// 所给员工的时间是一天之内的，时间是乱序的
 var alertNames = function (keyName, keyTime) {
   const map = {};
   const res = [];
