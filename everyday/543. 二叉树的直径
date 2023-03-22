@@ -1,0 +1,28 @@
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val, left, right) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.left = (left===undefined ? null : left)
+ *     this.right = (right===undefined ? null : right)
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @return {number}
+ */
+var diameterOfBinaryTree = function (root) {
+  const nodeMap = new Map(); // 记录每个节点的左右直径
+  let max = 0;
+
+  const dfs = root => {
+    if (nodeMap.get(root)) return Math.max(...nodeMap.get(root));
+
+    const left = root.left ? dfs(root.left) + 1 : 0;
+    const right = root.right ? dfs(root.right) + 1 : 0;
+    nodeMap.set(root, [left, right]);
+    max = Math.max(max, left + right);
+    return Math.max(left, right);
+  };
+  dfs(root);
+  return max;
+};
