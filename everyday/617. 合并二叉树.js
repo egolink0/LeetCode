@@ -11,6 +11,7 @@
  * @param {TreeNode} root2
  * @return {TreeNode}
  */
+// 将 root2 的值赋值给 root1
 var mergeTrees = function (root1, root2) {
   if (!root1) return root2;
   if (!root2) return root1;
@@ -26,3 +27,15 @@ var mergeTrees = function (root1, root2) {
 
   return root1;
 };
+
+// 示例：创建新的 node
+// var mergeTrees = (root1, root2) => {
+//   if (!root1) return root2;
+//   if (!root2) return root1;
+
+//   const val = root1.val + root2.val;
+//   const node = new TreeNode(val);
+//   node.left = mergeTrees(root1.left, root2.left);
+//   node.right = mergeTrees(root1.right, root2.right);
+//   return node;
+// };
