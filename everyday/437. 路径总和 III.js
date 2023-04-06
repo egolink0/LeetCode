@@ -15,9 +15,9 @@ var pathSum = function (root, targetSum) {
   let count = 0;
   const loop = (root, sums = []) => {
     const { left, right, val } = root;
-    const newSumRoots = sums.map(c => c + val).concat([val]);
+    const newSumRoots = sums.map(c => c + val).concat([val]); // 前綴和
     count += newSumRoots.filter(c => c === targetSum)?.length || 0;
-    if (left) loop(left, newSumRoots);
+    if (left) loop(left, newSumRoots); // 递归
     if (right) loop(right, newSumRoots);
   };
 
