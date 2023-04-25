@@ -1,6 +1,7 @@
 LeetCode
 # leetcode hot 100   
-36 / 100
+36 / 100  
+s
 
 #  每日一题 TODO
 - [x] [1129. 颜色交替的最短路径](https://leetcode.cn/problems/shortest-path-with-alternating-colors/submissions/)  
@@ -14,6 +15,7 @@ LeetCode
 - [ ] 1238. 循环码排列   
 - [ ] 1140. 石子游戏 II`DP`  
 - [ ]  [1792. 最大平均通过率](https://leetcode.cn/problems/maximum-average-pass-ratio/)`堆`  
+
 
 
 # 周赛
