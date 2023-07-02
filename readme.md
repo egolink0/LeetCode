@@ -1,5 +1,5 @@
 LeetCode
-# leetcode hot 100   
+# hot 100   
 36 / 100  
 
 #  每日一题 TODO
